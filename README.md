@@ -16,7 +16,7 @@ Expense Tracker is a simple web application that helps users keep track of their
 ## Getting Started
 To use the Expense Tracker, follow these steps:
 1. Clone the repository:
-   git clone https://github.com/surajsri23/expense-tracker.git
+   git clone https://github.com/surajsri23/expenses-tracker.git
 2. Navigate to the project directory:
 3. Open the `index.html` file in your web browser.
 
