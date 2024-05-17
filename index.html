@@ -9,23 +9,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <body>
     <div class="container">
         <h1>Expense Tracker</h1>
-        <div class="input-group">
-            <input type="text" id="itemName" placeholder="Item Name">
-            <input type="number" id="quantity" placeholder="Quantity">
-            <select id="quantityUnit">
-                <option value="Kg">Kg</option>
-                <option value="L">L</option>
-                <option value="dozens">Dozens</option>
-                <option value="grams">Grams</option>
-            </select>
-            <input type="number" id="amount" placeholder="Amount">
-            <button onclick="addItem()">Add Item</button>
+        <input type="date" id="expenseDate">
+        <input type="text" id="itemName" placeholder="Item Name">
+        <input type="number" id="quantity" placeholder="Quantity">
+        <select id="quantityUnit">
+            <option value="Kg">Kg</option>
+            <option value="L">L</option>
+            <option value="dozens">Dozens</option>
+            <option value="grams">Grams</option>
+        </select>
+        <input type="number" id="amount" placeholder="Amount">
+        <button onclick="addItem()">Add Item</button>
+
+        <div class="search-container">
+            <input type="text" id="searchItemName" placeholder="Search by Item Name">
+            <input type="date" id="searchDate">
+            <button onclick="searchItems()">Search</button>
         </div>
+
         <ul id="expenses"></ul>
         <div id="total" class="total"></div>
         <button onclick="clearAll()">Clear All</button>
+        <button onclick="printExpenses()">Print</button>
     </div>
 
     <script src="script.js">
